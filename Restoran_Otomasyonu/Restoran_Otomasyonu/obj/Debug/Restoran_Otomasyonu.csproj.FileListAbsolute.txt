@@ -1,0 +1,10 @@
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\bin\Debug\Restoran_Otomasyonu.exe.config
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\bin\Debug\Restoran_Otomasyonu.exe
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\bin\Debug\Restoran_Otomasyonu.pdb
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.csprojAssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.Frm_Giris.resources
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.Properties.Resources.resources
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.exe
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.pdb
