@@ -47,6 +47,7 @@
             this.cb_kullanici.Name = "cb_kullanici";
             this.cb_kullanici.Size = new System.Drawing.Size(240, 33);
             this.cb_kullanici.TabIndex = 0;
+            this.cb_kullanici.SelectedIndexChanged += new System.EventHandler(this.cb_kullanici_SelectedIndexChanged);
             // 
             // txt_sifre
             // 
@@ -71,7 +72,7 @@
             this.btn_giris.Size = new System.Drawing.Size(139, 45);
             this.btn_giris.TabIndex = 2;
             this.btn_giris.UseVisualStyleBackColor = true;
-            this.btn_giris.Click += new System.EventHandler(this.button1_Click);
+            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
             // 
             // btn_cikis
             // 

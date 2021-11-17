@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Windows.Forms;
 namespace Restoran_Otomasyonu
 {
     class cPersoneller
@@ -64,23 +65,61 @@ namespace Restoran_Otomasyonu
             bool result = false;
 
 
-            SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Select * From personeller where ID=@Id and PAROLA=@password", con);
-            //Personelller tablosundaki ıd ve şifreyi karşılaştıracak
+            SqlConnection con = new SqlConnection(gnl.conString);//Veritabanına bağladım.
+            SqlCommand cmd = new SqlCommand("Select * From personeller where ID=@Id and PAROLA=@password", con);//Gelen parola ve şifreyi kontrol ettim.
             cmd.Parameters.Add("@Id", SqlDbType.VarChar).Value = UserId;
             cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
 
 
             try
             {
-
+                if (con.State==ConnectionState.Closed)
+                {
+                    con.Open();//Eğer veritabanı kapalıysa bağlantıyı aç
+                }
+                result = Convert.ToBoolean(cmd.ExecuteScalar());//Cmd'deki gelen değeri bool'e çevirdim.
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
-
+                string hata = ex.Message;
                 throw;
             }
-            return true;
+            return result;
+        }
+        public void personelGetbyInformation(ComboBox cb)
+        {
+
+            cb.Items.Clear();
+
+            SqlConnection con = new SqlConnection(gnl.conString);//Veritabanına bağladım.
+            SqlCommand cmd = new SqlCommand("Select * From personeller", con);//Bilgileri getirdim
+           
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();//Eğer veritabanı kapalıysa bağlantıyı aç
+                }
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cPersoneller p = new cPersoneller();
+                //Combobox'ın içine class göndermiş oluyoruz.
+                p._PersonelId = Convert.ToInt32(dr["ID"]);
+                p._PersonelGorevId = Convert.ToInt32(dr["GOREVID"]);
+                p._PersonelAd = Convert.ToString(dr["AD"]);
+                p._PersonelSoyad = Convert.ToString(dr["SOYAD"]);
+                p._PersonelParola = Convert.ToString(dr["PAROLA"]);
+                p._PersonelKullaniciAdi = Convert.ToString(dr["KULLANICIADI"]);
+                p._Personel_Durum= Convert.ToBoolean(dr["DURUM"]);
+                cb.Items.Add(p);
+               
+            }
+            dr.Close();
+            con.Close();
+
+        }
+        public override string ToString()
+        {
+            return PersonelAd +" "+PersonelSoyad;
         }
     }
 }
