@@ -9,7 +9,7 @@ namespace Restoran_Otomasyonu
     class cGeneral
     {
         public string conString = ("Server=DESKTOP-TLDDJGU;Database=Restaurant;Trusted_Connection=True");
-        public  int _personelId;
-        public  int _gorevId;
+        public static  int _personelId;
+        public static  int _gorevId;
     }
 }

@@ -12,7 +12,7 @@ namespace Restoran_Otomasyonu
 {
     public partial class Frm_Giris : Form
     {
-        cGeneral gnl = new cGeneral();
+       
         public Frm_Giris()
         {
             
@@ -24,11 +24,17 @@ namespace Restoran_Otomasyonu
 
         private void btn_giris_Click(object sender, EventArgs e)
         {
-            
+            cGeneral gnl = new cGeneral();
             cPersoneller p = new cPersoneller();//Nesne oluşturdum
-            bool result = p.personelEntryControl(txt_sifre.Text,gnl._personelId);
+            bool result = p.personelEntryControl(txt_sifre.Text, cGeneral._personelId);
             if (result)
             {
+                cPersonelHareketleri ch = new cPersonelHareketleri();
+                ch.PersonelId = cGeneral._personelId;
+                ch.Islem = "Giriş Yaptı";
+                ch.Tarih = DateTime.Now;
+                ch.PersonelActionSave(ch);//Veritabanına ekler. Fonksiyona gider
+
                 this.Hide();
                 frmMenu menu= new frmMenu();
                 menu.Show();
@@ -38,9 +44,17 @@ namespace Restoran_Otomasyonu
         private void cb_kullanici_SelectedIndexChanged(object sender, EventArgs e)
         {
             cPersoneller p = (cPersoneller)cb_kullanici.SelectedItem;
-            gnl._personelId = p.PersonelId;
-            gnl._gorevId = p.PersonelGorevId;
+            cGeneral._personelId = p.PersonelId;
+            cGeneral._gorevId = p.PersonelGorevId;
             /*Kullanııc adı ve şifreyi yazınca diğer forma geçiş yapıyor.*/
+        }
+
+        private void btn_cikis_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak İstediğinize Emin Misiniz?","Uyarı!!!",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)==DialogResult.Yes)
+            {
+                Application.Exit();//Çıkış yapar.
+            }
         }
     }
 }

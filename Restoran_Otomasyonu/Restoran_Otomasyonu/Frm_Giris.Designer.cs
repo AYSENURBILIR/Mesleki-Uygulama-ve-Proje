@@ -86,6 +86,7 @@
             this.btn_cikis.Size = new System.Drawing.Size(95, 45);
             this.btn_cikis.TabIndex = 3;
             this.btn_cikis.UseVisualStyleBackColor = true;
+            this.btn_cikis.Click += new System.EventHandler(this.btn_cikis_Click);
             // 
             // button1
             // 
