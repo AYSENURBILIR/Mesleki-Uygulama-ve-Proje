@@ -8,3 +8,4 @@ C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Res
 C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.exe
 C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.pdb
+C:\Users\Lenovo\OneDrive\Masaüstü\Restorant Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.frmMenu.resources

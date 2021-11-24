@@ -49,11 +49,65 @@
     <Compile Include="cGeneral.cs" />
     <Compile Include="cPersonelHareketleri.cs" />
     <Compile Include="cPersoneller.cs" />
+    <Compile Include="frmKasaIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKasaIslemleri.Designer.cs">
+      <DependentUpon>frmKasaIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLock.Designer.cs">
+      <DependentUpon>frmLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasalar.Designer.cs">
+      <DependentUpon>frmMasalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMutfak.Designer.cs">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaporlar.Designer.cs">
+      <DependentUpon>frmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparis.Designer.cs">
+      <DependentUpon>frmSiparis.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Giris.cs">
       <SubType>Form</SubType>
@@ -64,6 +118,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlConnection.cs" />
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Giris.resx">
       <DependentUpon>Frm_Giris.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +164,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siyah arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siyah arkaplan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paket servis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşteri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mutfak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raporlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilitle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çıkış4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
